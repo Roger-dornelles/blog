@@ -31,7 +31,7 @@ export default function Home({ error, message, data }: ResponsePropsType) {
           currentItems?.map((posts: DataType) => {
             return (
               <Styles.Post key={posts.id}>
-                <Link href={`${posts.id}`}>
+                <Link href={`postId/${posts.id}`}>
                   <p>{posts?.title}</p>
                   <p>{posts?.body}</p>
                 </Link>
@@ -42,11 +42,7 @@ export default function Home({ error, message, data }: ResponsePropsType) {
         {error && <Styles.Error>{message}</Styles.Error>}
       </Styles.Container>
 
-      {!error && (
-        <div>
-          <Pagination currentPage={currentPage} handlePagination={handlePagination} pages={pages} />
-        </div>
-      )}
+      {!error && <Pagination currentPage={currentPage} handlePagination={handlePagination} pages={pages} />}
     </>
   );
 }
