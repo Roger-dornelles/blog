@@ -5,7 +5,7 @@ import { BsChevronLeft, BsChevronRight, BsChevronDoubleLeft, BsChevronDoubleRigh
 type PaginationType = {
   currentPage: number;
   handlePagination: (value: number) => void;
-  pages: number;
+  pages: number | any;
 };
 
 export const Pagination = ({ currentPage, handlePagination, pages }: PaginationType) => {
@@ -29,7 +29,7 @@ export const Pagination = ({ currentPage, handlePagination, pages }: PaginationT
 
   useEffect(() => {
     handlePagination(pagination);
-  }, []);
+  }, [pagination]);
 
   return (
     <styles.Container>
