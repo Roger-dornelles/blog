@@ -29,19 +29,19 @@ const users = () => {
 
   return (
     <styles.Container>
-      <styles.H2>Empresas parceiras do Bloguinho.</styles.H2>
+      <styles.H2 data-cy="h2">Empresas parceiras do Bloguinho.</styles.H2>
 
-      <styles.UsersContainer>
+      <styles.UsersContainer data-cy="container">
         <styles.Ul>
           {users &&
             users.map((item) => {
               return (
                 <styles.Li key={item.id}>
                   <styles.User>
-                    <Link href={`/user/${item.id}`}>
+                    <Link href={`/user/${item.id}`} data-cy={item.id}>
                       <p>Nome: {item.name}</p>
                       <p>Apelido: {item.username}</p>
-                      <p>Contato: {item.phone}</p>
+                      <p data-cy="contact">Contato: {item.phone}</p>
                       <p>WebSite: {item.website}</p>
                     </Link>
                   </styles.User>

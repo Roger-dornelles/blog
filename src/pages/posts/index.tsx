@@ -31,7 +31,7 @@ const Posts = ({ error, message, data }: ResponsePropsType) => {
           currentItems?.map((posts: DataType) => {
             return (
               <Styles.Post key={posts.id}>
-                <Link href={`postId/${posts.id}`}>
+                <Link href={`postId/${posts.id}`} data-cy={posts.id}>
                   <p>{posts?.title}</p>
                   <p>{posts?.body}</p>
                 </Link>
