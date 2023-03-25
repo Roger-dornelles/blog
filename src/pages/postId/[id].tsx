@@ -24,18 +24,18 @@ const postID = ({ error, message, data }: PostIDType) => {
     <styles.Container>
       <styles.Link>
         <BsArrowLeft />
-        <Link href={'/posts'}>Voltar</Link>
+        <Link href={'/posts'} data-cy='link'>Voltar</Link>
       </styles.Link>
       <styles.H2>Bloguinho</styles.H2>
 
       {post && (
-        <styles.Post>
+        <styles.Post data-cy='title'>
           <styles.PostTitle>{post.title}</styles.PostTitle>
           <styles.PostBody>{post.body}</styles.PostBody>
         </styles.Post>
       )}
 
-      <styles.H2>Comentários</styles.H2>
+      <styles.H2 data-cy='h2'>Comentários</styles.H2>
       <styles.CommentsContainer>
         {comments &&
           comments.map((item: CommentsType) => {
