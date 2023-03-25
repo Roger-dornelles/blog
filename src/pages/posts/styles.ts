@@ -12,8 +12,8 @@ export const Container = styled.section`
 export const Post = styled.div`
   display: flex;
   width: calc(95% / 3);
-  height: 200px;
-  padding: 0.5rem;
+
+  padding: 1.2rem;
   border: 1px solid rgb(240, 234, 228);
   margin: 0.5rem;
   border-radius: 5px;
@@ -42,7 +42,6 @@ export const Post = styled.div`
     justify-content: center;
     align-items: center;
     width: calc(90% / 2);
-    height: 300px;
     margin: 0.5rem;
     font-size: 18px;
   }
@@ -52,9 +51,8 @@ export const Post = styled.div`
     justify-content: center;
     align-items: center;
     width: 90%;
-
     margin: 1rem;
-    font-size: 18px;
+    font-size: 19px;
   }
 
   @media (max-width: 768px) {
@@ -62,7 +60,6 @@ export const Post = styled.div`
     justify-content: center;
     align-items: center;
     width: 90%;
-
     margin: 1rem;
   }
 
@@ -71,7 +68,6 @@ export const Post = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
     margin: 1rem 0;
   }
 `;

@@ -18,7 +18,7 @@ export default function Home() {
         </styles.ContainerParagraphs>
 
         <styles.ContainerParagraphs marginTop={'2rem'}>
-          <styles.Paragraph>Entre e saiba o que esta acontecendo no mundo</styles.Paragraph>
+          <styles.Paragraph>Entre e saiba o que esta acontecendo no mundo.</styles.Paragraph>
           <styles.Paragraph>Clique e saiba o que estão comentando.</styles.Paragraph>
         </styles.ContainerParagraphs>
       </styles.Container>
