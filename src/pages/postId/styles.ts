@@ -83,26 +83,19 @@ export const Comments = styled.div`
   width: calc(90% / 3);
   display: flex;
   justify-content: center;
-  height: 10rem;
+  min-height: 15rem;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   margin: 0.5rem;
   flex-direction: column;
   padding: 1rem;
 
-  @media (max-width: 1650px) {
-    height: 12rem;
-  }
-  @media (max-width: 1230px) {
-    height: 14rem;
-  }
-
   @media (max-width: 1230px) {
     width: calc(90% / 2);
   }
 
   @media (max-width: 950px) {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   @media (max-width: 780px) {
@@ -112,12 +105,10 @@ export const Comments = styled.div`
 
   @media (max-width: 420px) {
     font-size: 17px;
-    height: 16rem;
   }
 
   @media (max-width: 280px) {
     font-size: 17px;
-    height: 22rem;
   }
 `;
 

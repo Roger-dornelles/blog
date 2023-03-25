@@ -5,12 +5,21 @@ export const Container = styled.div`
   height: 100vh;
   margin: 0 auto;
   margin-top: -2rem;
+
+  @media (max-width: 920px) {
+    font-size: 19px;
+  }
+
+  @media (max-width: 820px) {
+    font-size: 19px;
+  }
 `;
 
 export const H1 = styled.h1`
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
+  margin-top: 3rem;
 `;
 
 interface MarginTop {
@@ -29,4 +38,5 @@ export const Paragraph = styled.p`
   display: flex;
   font-family: sans-serif;
   margin-bottom: 0.3rem;
+  padding: 0 0.5rem 0 0.5rem;
 `;

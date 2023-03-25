@@ -8,9 +8,9 @@ type ChildrenType = {
 };
 
 const data = [
-  { label: 'Home', path: '/' },
-  { label: 'Posts', path: '/posts' },
-  { label: 'Empresas', path: '/users' },
+  { label: 'Home', path: '/', pathname: '/' },
+  { label: 'Posts', path: '/posts', pathname: '/postId/[id]' },
+  { label: 'Empresas', path: '/users', pathname: '/user/[id]' },
 ];
 
 export const Layout = ({ children }: ChildrenType) => {
@@ -25,7 +25,7 @@ export const Layout = ({ children }: ChildrenType) => {
               data.map((item, index) => {
                 return (
                   <li key={index}>
-                    {router.pathname === item.path ? (
+                    {router.pathname === item.path || router.pathname === item.pathname ? (
                       <styles.LinkActive>
                         <Link href={item.path}>{item.label}</Link>
                       </styles.LinkActive>
