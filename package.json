@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "cypress": "^12.8.1",
     "eslint": "^8.36.0",
     "eslint-config-standard-with-typescript": "^34.0.1",
     "eslint-import-resolver-typescript": "^3.5.3",
