@@ -10,7 +10,7 @@ type ChildrenType = {
 const data = [
   { label: 'Home', path: '/' },
   { label: 'Posts', path: '/posts' },
-  { label: 'Usuários', path: '/users' },
+  { label: 'Empresas', path: '/users' },
 ];
 
 export const Layout = ({ children }: ChildrenType) => {

@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { SetStateAction, useEffect, useState } from 'react';
 import * as styles from './styles';
 import { BsChevronLeft, BsChevronRight, BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
 
 type PaginationType = {
   currentPage: number;
   handlePagination: (value: number) => void;
-  pages: number | any;
+  pages: number | SetStateAction<number>;
 };
 
 export const Pagination = ({ currentPage, handlePagination, pages }: PaginationType) => {
