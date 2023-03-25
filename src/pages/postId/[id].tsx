@@ -24,7 +24,7 @@ const postID = ({ error, message, data }: PostIDType) => {
     <styles.Container>
       <styles.Link>
         <BsArrowLeft />
-        <Link href={'/'}>Voltar</Link>
+        <Link href={'/posts'}>Voltar</Link>
       </styles.Link>
       <styles.H2>Bloguinho</styles.H2>
 
