@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { GetServerSideProps } from 'next';
 import { Pagination } from '@/components/Pagination';
 
-export default function Posts({ error, message, data }: ResponsePropsType) {
+const Posts = ({ error, message, data }: ResponsePropsType) => {
   const [posts] = useState(data as DataType[] | null);
   const [itemsPerPage] = useState<number>(9);
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -25,7 +25,7 @@ export default function Posts({ error, message, data }: ResponsePropsType) {
       <Head />
 
       <Styles.H1>Bloguinho</Styles.H1>
-      <Styles.Paragraph>Noticias do dia.</Styles.Paragraph>
+      <Styles.Paragraph>Noticias do dia</Styles.Paragraph>
       <Styles.Container>
         {posts &&
           currentItems?.map((posts: DataType) => {
@@ -45,7 +45,9 @@ export default function Posts({ error, message, data }: ResponsePropsType) {
       {!error && <Pagination currentPage={currentPage} handlePagination={handlePagination} pages={pages} />}
     </>
   );
-}
+};
+
+export default Posts;
 
 export const getServerSideProps: GetServerSideProps = async () => {
   try {
