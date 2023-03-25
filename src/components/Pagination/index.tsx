@@ -5,7 +5,7 @@ import { BsChevronLeft, BsChevronRight, BsChevronDoubleLeft, BsChevronDoubleRigh
 type PaginationType = {
   currentPage: number;
   handlePagination: (value: number) => void;
-  pages: number | SetStateAction<number>;
+  pages: number | any;
 };
 
 export const Pagination = ({ currentPage, handlePagination, pages }: PaginationType) => {
