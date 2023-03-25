@@ -15,7 +15,7 @@ const data = [
 
 export const Layout = ({ children }: ChildrenType) => {
   const router = useRouter();
-  console.log(router.pathname);
+
   return (
     <>
       <styles.Container>
