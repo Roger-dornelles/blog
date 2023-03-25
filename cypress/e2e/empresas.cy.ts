@@ -6,18 +6,18 @@ describe('empresas', () => {
   });
 
   it(' should navigate to the company page', () => {
-    cy.get('.styles__H2-sc-94858a8c-1').should('exist');
-    cy.get('.styles__H2-sc-94858a8c-1').should('contain', 'parceiras');
-    cy.get(':nth-child(1) > .styles__User-sc-94858a8c-6').should('exist');
-    cy.get(':nth-child(1) > .styles__User-sc-94858a8c-6 > a > :nth-child(3)').contains('Contato');
+    cy.get('[data-cy="1"]').should('exist');
+    cy.get('[data-cy="h2"]').should('contain', 'parceiras');
+    cy.get('[data-cy="contact"]').should('exist');
+    cy.get('[data-cy="contact"]').contains('Contato');
   });
 
   it('should return page elements company', () => {
-    cy.get(':nth-child(3) > .styles__User-sc-94858a8c-6').should('exist');
-    cy.get(':nth-child(3) > .styles__User-sc-94858a8c-6').click();
+    cy.get('[data-cy="container"]').should('exist');
+    cy.get('[data-cy="1"]').click();
     cy.url().should('include', '/user');
-    cy.get('.styles__Link-sc-b64562ac-1 > a').contains('Voltar');
-    cy.get('.styles__Link-sc-b64562ac-1 > a').click();
+    cy.get('[data-cy="exit"]').contains('Voltar');
+    cy.get('[data-cy="exit"]').click();
     cy.url().should('include', '/users');
   });
 });

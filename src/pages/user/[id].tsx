@@ -45,18 +45,18 @@ const userID = ({ data }: DataProps) => {
 
   return (
     <styles.Container>
-      <styles.Link>
+      <styles.Link >
         <BsArrowLeft />
-        <Link href={'/users'}>Voltar</Link>
+        <Link data-cy="exit" href={'/users'}>Voltar</Link>
       </styles.Link>
       <styles.InfoContainer>
         {userInfo && (
           <>
             <styles.InfoUser>
-              <strong>Responsável</strong>
+              <strong data-cy='strong'>Responsável</strong>
               <p>Nome: {userInfo?.name}</p>
               <p>Apelido: {userInfo?.username}</p>
-              <p>Contato: {userInfo?.phone}</p>
+              <p data-cy='contact'>Contato: {userInfo?.phone}</p>
               <p>Email: {userInfo?.email}</p>
             </styles.InfoUser>
 
@@ -68,7 +68,7 @@ const userID = ({ data }: DataProps) => {
             </styles.InfoUser>
 
             <styles.InfoUser>
-              <strong>Localização</strong>
+              <strong data-cy='location'>Localização</strong>
               <p>Cidade: {userInfo?.address.city}</p>
               <p>Rua: {userInfo?.address.street}</p>
               <p> {userInfo?.address.suite}</p>
