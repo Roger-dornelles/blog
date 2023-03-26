@@ -53,9 +53,9 @@ Abrir uma nova aba do terminal e dentro da pasta do projeto executar o comando
 ```
 npm run cy:run
 ```
-vai executar os testes, para visalizar a execução ao vivo dos testes no terminal dentro da pasta do projeto digitar
+vai executar os testes, para visualizar a execução ao vivo dos testes no terminal dentro da pasta do projeto digitar
 ```
 npm run cy:open
 ```
 
-abrira uma nova aba e com todos osteste criados, só clicar em um teste dentro da pasta specs
+abrira uma nova aba e com todos os teste criados, só clicar em um teste que vai estar dentro da pasta specs
